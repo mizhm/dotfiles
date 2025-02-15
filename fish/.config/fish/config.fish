@@ -9,4 +9,3 @@ alias nv="nvim"
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$HOME/opt/usr/local/bin:$PATH"
 export TMPDIR="/tmp"
-

@@ -4,11 +4,13 @@
 
 local o = vim.opt
 
---linebreak
+-- linebreak
 o.clipboard = "unnamedplus"
 o.linebreak = true
 o.breakindent = true
 o.textwidth = 120
 o.wrap = false
-
 o.shell = "/usr/bin/fish"
+o.spell = true
+
+vim.g.snacks_animate = false
