@@ -1,7 +1,8 @@
 command = /usr/bin/fish --login --interactive
-theme = Kanagawa Dragon
+theme = tokyonight
 font-size = 18
 cursor-style = block
 shell-integration-features = no-cursor
 cursor-style-blink = false
 window-decoration = none
+
