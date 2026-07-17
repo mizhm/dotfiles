@@ -1,4 +1,23 @@
 {
   "plugin": ["oh-my-openagent@latest"],
-  "$schema": "https://opencode.ai/config.json"
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "9router": {
+      "name": "9router",
+      "options": {
+        "baseURL": "https://llm.oasm.dev/v1"
+      },
+      "models": {
+        "ocg/mimo-v2.5": {
+          "name": "Mimo v2.5"
+        },
+        "ocg/deepseek-v4-pro": {
+          "name": "DeepSeek v4 Pro"
+        },
+        "ocg/deepseek-v4-flash": {
+          "name": "DeepSeek v4 Flash"
+        }
+      }
+    }
+  }
 }

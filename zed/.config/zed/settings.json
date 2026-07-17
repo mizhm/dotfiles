@@ -16,10 +16,11 @@
 {
 	// UI font family (for menus, panels, etc.)
 	// https://zed.dev/docs/reference/all-settings#ui-font-family
+	"format_on_save": "on",
 	"title_bar": {
-  "show_branch_status_icon": true
- },
- "ui_font_family": "Maple Mono NF",
+		"show_branch_status_icon": true,
+	},
+	"ui_font_family": "Maple Mono NF",
 
 	// Whether to colorize matching brackets (rainbow brackets)
 	// https://zed.dev/docs/reference/all-settings#colorize-brackets
