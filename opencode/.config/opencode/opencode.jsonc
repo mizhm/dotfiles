@@ -1,0 +1,34 @@
+{
+  "plugin": ["oh-my-openagent@latest"],
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "9router": {
+      "name": "9router",
+      "options": {
+        "baseURL": "https://llm.oasm.dev/v1"
+      },
+      "models": {
+        "ocg/mimo-v2.5": {
+          "name": "Mimo v2.5"
+        },
+        "ocg/deepseek-v4-pro": {
+          "name": "DeepSeek v4 Pro"
+        },
+        "ocg/deepseek-v4-flash": {
+          "name": "DeepSeek v4 Flash"
+        }
+      }
+    }
+  },
+  "mcp": {
+    "github": {
+      "type": "remote",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "enabled": true,
+      "oauth": false,
+      "headers": {
+        "Authorization": "Bearer {env:GITHUB_MCP_TOKEN}"
+      }
+    }
+  }
+}

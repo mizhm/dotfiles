@@ -1,0 +1,111 @@
+{
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/dev/assets/oh-my-opencode.schema.json",
+  "agents": {
+    "sisyphus": {
+      "model": "ocg/deepseek-v4-pro"
+    },
+    "oracle": {
+      "model": "ocg/deepseek-v4-pro"
+    },
+    "librarian": {
+      "model": "ocg/mimo-v2.5",
+      "fallback_models": [
+        {
+          "model": "ocg/deepseek-v4-flash"
+        }
+      ]
+    },
+    "explore": {
+      "model": "ocg/mimo-v2.5",
+      "fallback_models": [
+        {
+          "model": "ocg/deepseek-v4-flash"
+        }
+      ]
+    },
+    "multimodal-looker": {
+      "model": "ocg/mimo-v2.5"
+    },
+    "prometheus": {
+      "model": "ocg/deepseek-v4-pro"
+    },
+    "metis": {
+      "model": "ocg/mimo-v2.5"
+    },
+    "momus": {
+      "model": "ocg/mimo-v2.5"
+    },
+    "atlas": {
+      "model": "ocg/mimo-v2.5",
+      "fallback_models": [
+        {
+          "model": "ocg/deepseek-v4-flash"
+        }
+      ]
+    },
+    "sisyphus-junior": {
+      "model": "ocg/mimo-v2.5",
+      "fallback_models": [
+        {
+          "model": "ocg/deepseek-v4-flash"
+        }
+      ]
+    }
+  },
+  "categories": {
+    "visual-engineering": {
+      "model": "ocg/mimo-v2.5"
+    },
+    "ultrabrain": {
+      "model": "ocg/mimo-v2.5"
+    },
+    "deep": {
+      "model": "ocg/deepseek-v4-pro",
+      "fallback_models": [
+        {
+          "model": "ocg/mimo-v2.5-pro"
+        }
+      ]
+    },
+    "artistry": {
+      "model": "ocg/deepseek-v4-pro",
+      "fallback_models": [
+        {
+          "model": "ocg/mimo-v2.5"
+        }
+      ]
+    },
+    "quick": {
+      "model": "ocg/mimo-v2.5",
+      "fallback_models": [
+        {
+          "model": "ocg/deepseek-v4-flash"
+        }
+      ]
+    },
+    "unspecified-low": {
+      "model": "ocg/mimo-v2.5",
+      "fallback_models": [
+        {
+          "model": "ocg/deepseek-v4-flash"
+        }
+      ]
+    },
+    "unspecified-high": {
+      "model": "ocg/mimo-v2.5",
+      "fallback_models": [
+        {
+          "model": "ocg/deepseek-v4-flash"
+        }
+      ]
+    },
+    "writing": {
+      "model": "ocg/mimo-v2.5",
+      "fallback_models": [
+        {
+          "model": "ocg/deepseek-v4-flash"
+        }
+      ]
+    }
+  }
+}
