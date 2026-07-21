@@ -1,4 +1,0 @@
-# This file contains fish universal variable definitions.
-# VERSION: 3.0
-SETUVAR __fish_initialized:4300
-SETUVAR fish_user_paths:/opt/spark/bin\x1e/opt/nvim\x2dlinux\x2dx86_64/bin\x1e/home/minh/\x2ebun/bin\x1e/home/minh/\x2econfig/nvm/versions/node/v22\x2e12\x2e0/bin\x1e/usr/local/bin
