@@ -4,43 +4,6 @@ RightButton;NoModifier=org.kde.contextmenu
 [ActionPlugins][1]
 RightButton;NoModifier=org.kde.contextmenu
 
-[Containments][1]
-ItemGeometries-1920x1080=
-ItemGeometriesHorizontal=
-activityId=b170acc0-7676-411c-b309-eafca606f1df
-formfactor=0
-immutability=1
-lastScreen=0
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
-
-[Containments][1][ConfigDialog]
-DialogHeight=1052
-DialogWidth=1920
-
-[Containments][1][Wallpaper][org.kde.image][General]
-Image=/home/minh/Pictures/wall/wallhaven-3q6kjv.png
-SlidePaths=/usr/share/wallpapers/
-
-[Containments][2]
-ItemGeometries-1920x1080=
-ItemGeometriesHorizontal=
-activityId=b170acc0-7676-411c-b309-eafca606f1df
-formfactor=0
-immutability=1
-lastScreen=1
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
-
-[Containments][2][ConfigDialog]
-DialogHeight=630
-DialogWidth=810
-
-[Containments][2][Wallpaper][org.kde.image][General]
-Image=/home/minh/Pictures/wall/wallhaven-3q6kjv.png
-
 [Containments][3]
 activityId=
 formfactor=2
@@ -221,7 +184,7 @@ immutability=1
 plugin=org.kde.plasma.icontasks
 
 [Containments][53][Applets][56][Configuration][General]
-launchers=applications:systemsettings.desktop,preferred://filemanager,applications:com.ayugram.desktop.desktop,file:///var/lib/flatpak/exports/share/applications/md.obsidian.Obsidian.desktop,applications:com.github.th-ch.youtube-music.desktop,applications:anki.desktop,applications:dev.zed.Zed.desktop,file:///var/lib/flatpak/exports/share/applications/com.microsoft.Edge.desktop,preferred://browser
+launchers=applications:systemsettings.desktop,preferred://filemanager,applications:com.ayugram.desktop.desktop,file:///var/lib/flatpak/exports/share/applications/md.obsidian.Obsidian.desktop,applications:com.github.th-ch.youtube-music.desktop,applications:anki.desktop,applications:dev.zed.Zed.desktop,preferred://browser
 
 [Containments][53][Applets][57]
 immutability=1
@@ -334,6 +297,34 @@ plugin=org.kde.plasma.showdesktop
 
 [Containments][53][General]
 AppletOrder=54;55;56;57;58;76;77
+
+[Containments][78]
+ItemGeometries-1920x1080=
+ItemGeometriesHorizontal=
+activityId=7d99d7f3-9068-423b-875b-b49c09cc0c55
+formfactor=0
+immutability=1
+lastScreen=0
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][78][Wallpaper][org.kde.image][General]
+Image=/home/minh/Pictures/wall/wallhaven-p92y93.png
+
+[Containments][79]
+ItemGeometries-1920x1080=
+ItemGeometriesHorizontal=
+activityId=7d99d7f3-9068-423b-875b-b49c09cc0c55
+formfactor=0
+immutability=1
+lastScreen=1
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][79][Wallpaper][org.kde.image][General]
+Image=/home/minh/Pictures/wall/wallhaven-p92y93.png
 
 [ScreenMapping]
 itemsOnDisabledScreens=
