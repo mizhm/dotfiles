@@ -276,5 +276,9 @@ _launch=Meta+Return
 [services][org.kde.konsole.desktop]
 _launch=none
 
+[services][org.kde.spectacle.desktop]
+CurrentMonitorScreenShot=none
+OpenWithoutScreenshot=none
+
 [services][org.mozilla.firefox.desktop]
 _launch=Meta+B
