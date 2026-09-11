@@ -1,0 +1,11 @@
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[user]
+	name = mizhm
+	email = minhnt141204@gmail.com
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
+[push]
+	autoSetupRemote = true
