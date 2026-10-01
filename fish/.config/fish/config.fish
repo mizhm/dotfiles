@@ -18,3 +18,7 @@ export TMPDIR="/tmp"
 
 set -gx GOPATH $HOME/go
 set -gx PATH $PATH $GOPATH/bin
+
+
+# Added by Antigravity CLI installer
+set -gx PATH "/home/minh/.local/bin" $PATH
