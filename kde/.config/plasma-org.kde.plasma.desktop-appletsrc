@@ -18,7 +18,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][3][Applets][23][Configuration]
-popupHeight=400
+popupHeight=451
 popupWidth=560
 
 [Containments][3][Applets][23][Configuration][Appearance]
@@ -309,6 +309,10 @@ lastScreen=0
 location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
+
+[Containments][78][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
 
 [Containments][78][Wallpaper][org.kde.image][General]
 Image=/home/minh/Pictures/wall/wallhaven-p92y93.png
