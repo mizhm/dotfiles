@@ -61,11 +61,20 @@
 	// Agent servers configuration (MCP servers)
 	// https://zed.dev/docs/remote-development#mcp
 	"agent_servers": {
-		"opencode": {
+		"claude-acp": {
+   "default_config_options": {
+    "effort": "max",
+    "model": "opus",
+    "mode": "plan",
+    "fast": false
+   },
+   "type": "registry"
+  },
+  "opencode": {
 			"default_config_options": {
 				"effort": "max",
-				"model": "9router/pro",
-				"mode": "Atlas - Plan Executor",
+				"model": "9router/vip",
+				"mode": "Prometheus - Plan Builder",
 			},
 			"favorite_config_option_values": {
 				"model": ["opencode/deepseek-v4-flash-free", "opencode/mimo-v2.5-free"],
