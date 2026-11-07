@@ -59,7 +59,7 @@
         transport: stdio
         command: npx
         args:
-          - "@playwright/mcp@latest"
+          - "@playwright/mcp@0.0.84"
           - "--executable-path"
           - "/usr/bin/chromium-browser"
 - id: agent-preset-registry
