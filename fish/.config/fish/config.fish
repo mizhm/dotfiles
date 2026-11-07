@@ -3,6 +3,7 @@ if status is-interactive
 end
 starship init fish | source
 alias c="clear"
+alias a="claude"
 alias pn="pnpm"
 alias v="nvim"
 alias nv="nvim"
@@ -13,6 +14,7 @@ export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:/home/minh/.opencode/bin"
 export PATH="$PATH:/home/minh/.bun/bin"
 export PATH="$PATH:/home/minh/.local/bin"
+export PATH="$PATH:/home/minh/Downloads/platform-tools/"
 export PATH="$HOME/opt/usr/local/bin:$PATH"
 export TMPDIR="/tmp"
 

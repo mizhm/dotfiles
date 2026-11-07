@@ -1,0 +1,37 @@
+# Your patch layer for this dsh profile, applied after every bundle layer:
+# a top-level YAML array of loader patch entries (id-targeted config
+# overrides, disables, and insert lists; `!!js` expressions allowed).
+- id: ui-settings-general
+  name: "@deepseek-ai/dsh-client-ui-settings-general"
+  config:
+    welcomeNoticeVersion: 2026-09-28.1
+- id: llm-deepseek
+  name: "@deepseek-ai/dsh-llm-deepseek-api-key"
+  config:
+    baseURL: https://llm.oasm.dev/v1
+    models:
+      - id: auto
+        name: Auto
+        contextWindow: 1048576
+        systemPromptUpdate: in-history
+        toolUpdate: addition-only
+        inputModalities:
+          - text
+          - image
+      - id: pro
+        name: Pro
+        description: Stronger agentic coding, knowledge, and difficult reasoning; suited
+          to complex or quality-critical tasks at higher cost.
+        contextWindow: 1048576
+        inputModalities:
+          - text
+- id: agent-default-model
+  name: "@deepseek-ai/dsh-agent-default-model"
+  config:
+    provider: deepseek-official
+    model: auto
+- id: ui-theme
+  name: "@deepseek-ai/dsh-client-ui-theme"
+  config:
+    preference: light
+    fontSize: 18

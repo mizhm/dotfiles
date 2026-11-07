@@ -1,0 +1,5 @@
+.credentials.yaml
+.anonymous-user-id
+sessions/
+storages/
+cache/
