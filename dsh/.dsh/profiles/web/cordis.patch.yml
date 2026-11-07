@@ -20,7 +20,8 @@
           - image
       - id: pro
         name: Pro
-        description: Stronger agentic coding, knowledge, and difficult reasoning; suited
+        description:
+          Stronger agentic coding, knowledge, and difficult reasoning; suited
           to complex or quality-critical tasks at higher cost.
         contextWindow: 1048576
         inputModalities:
@@ -35,3 +36,11 @@
   config:
     preference: light
     fontSize: 18
+- id: mcp-github
+  name: "@deepseek-ai/dsh-mcp-client"
+  config:
+    serverName: github
+    transport: streamable-http
+    url: https://api.githubcopilot.com/mcp/
+    headers:
+      Authorization: !!js "`Bearer ${process.env.GITHUB_MCP_TOKEN}`"
