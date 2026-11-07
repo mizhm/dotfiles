@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+# Begin one task of an inline plan execution in a single call: extract the
+# task's brief from the plan file into the plan's workspace and record BASE,
+# the commit the task's review range is cut from. One tool call instead of
+# two, because every call in an inline session is a turn that re-reads the
+# whole context.
+#
+# Usage: task-start PLAN_FILE TASK_NUMBER
+# Prints:
+#   brief: <path to the task's brief file>
+#   base:  <full SHA of HEAD>
+set -euo pipefail
+
+if [ $# -ne 2 ]; then
+  echo "usage: task-start PLAN_FILE TASK_NUMBER" >&2
+  exit 2
+fi
+
+plan=$1
+n=$2
+
+repo=$(git rev-parse --show-toplevel)
+base=$(basename "$plan" .md)
+dir="$repo/.superpowers/inline/$base"
+mkdir -p "$dir"
+
+brief="$dir/task-${n}-brief.md"
+# Extract the "### Task N:" section from the plan into the brief file.
+awk -v n="$n" '
+  /^### Task / {
+    if (found) exit
+    if ($0 ~ "^### Task " n ":") { found=1; print; next }
+    next
+  }
+  found { print }
+' "$plan" > "$brief"
+[ -s "$brief" ] || { echo "task-start: no '### Task $n:' section in $plan" >&2; exit 1; }
+
+echo "brief: $brief"
+echo "base: $(git rev-parse HEAD)"

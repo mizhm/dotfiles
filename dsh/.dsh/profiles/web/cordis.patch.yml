@@ -36,11 +36,34 @@
   config:
     preference: light
     fontSize: 18
-- id: mcp-github
-  name: "@deepseek-ai/dsh-mcp-client"
+- insert:
+    - id: mcp-github
+      name: "@deepseek-ai/dsh-mcp-client"
+      config:
+        serverName: github
+        transport: streamable-http
+        url: https://api.githubcopilot.com/mcp/
+        headers:
+          Authorization: !!js "`Bearer ${process.env.GITHUB_MCP_TOKEN}`"
+    - id: mcp-context7
+      name: "@deepseek-ai/dsh-mcp-client"
+      config:
+        serverName: context7
+        transport: streamable-http
+        url: https://mcp.context7.com/mcp
+        headers: !!js "process.env.CONTEXT7_API_KEY ? { Authorization: `Bearer ${process.env.CONTEXT7_API_KEY}` } : {}"
+    - id: mcp-playwright
+      name: "@deepseek-ai/dsh-mcp-client"
+      config:
+        serverName: playwright
+        transport: stdio
+        command: npx
+        args:
+          - "@playwright/mcp@latest"
+          - "--executable-path"
+          - "/usr/bin/chromium-browser"
+- id: agent-preset-registry
+  name: "@deepseek-ai/dsh-agent-preset-registry"
   config:
-    serverName: github
-    transport: streamable-http
-    url: https://api.githubcopilot.com/mcp/
-    headers:
-      Authorization: !!js "`Bearer ${process.env.GITHUB_MCP_TOKEN}`"
+    default: standard
+    selectedDefault: standard
