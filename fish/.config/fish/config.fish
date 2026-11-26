@@ -13,8 +13,6 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$PATH:/home/minh/.nvm/versions/node/v24.22.0/bin"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:/home/minh/.opencode/bin"
-# Keep OpenCode native: skip ~/.claude skills and CLAUDE.md fallback
-set -gx OPENCODE_DISABLE_CLAUDE_CODE 1
 export PATH="$PATH:/home/minh/.bun/bin"
 export PATH="$PATH:/home/minh/.local/bin"
 export PATH="$PATH:/home/minh/Downloads/platform-tools/"
