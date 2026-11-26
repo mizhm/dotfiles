@@ -16,14 +16,35 @@
       }
     }
   },
+  "plugins": [
+    "superpowers@git+https://github.com/obra/superpowers.git",
+    "@dietrichgebert/ponytail"
+  ],
   "mcp": {
-    "github": {
-      "type": "remote",
-      "url": "https://api.githubcopilot.com/mcp/",
-      "enabled": true,
-      "oauth": false,
-      "headers": {
-        "Authorization": "Bearer {env:GITHUB_MCP_TOKEN}"
+    "servers": {
+      "github": {
+        "type": "remote",
+        "url": "https://api.githubcopilot.com/mcp/",
+        "oauth": false,
+        "headers": {
+          "Authorization": "Bearer {env:GITHUB_MCP_TOKEN}"
+        }
+      },
+      "context7": {
+        "type": "remote",
+        "url": "https://mcp.context7.com/mcp"
+      },
+      "caveman": {
+        "type": "local",
+        "command": ["/home/minh/.caveman/bin/caveman-mcp"]
+      },
+      "rea": {
+        "type": "local",
+        "command": ["npx", "-y", "rea-agents@6.4.0", "mcp"]
+      },
+      "playwright": {
+        "type": "local",
+        "command": ["npx", "@playwright/mcp@latest"]
       }
     }
   }
