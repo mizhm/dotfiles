@@ -1,10 +1,12 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "provider": {
+  "providers": {
     "9router": {
       "name": "9router",
-      "options": {
-        "baseURL": "https://llm.oasm.dev/v1"
+      "package": "@opencode/ai/providers/openai-compatible",
+      "settings": {
+        // via caveman proxy; mount defined in ~/.caveman/caveman.yaml (compat.9router)
+        "baseURL": "http://127.0.0.1:8787/w/opencode/compat/9router/v1"
       },
       "models": {
         "auto": {
@@ -13,6 +15,22 @@
         "pro": {
           "name": "Pro"
         }
+      }
+    },
+    // caveman proxy routes (`caveman setup` re-adds them in V1 `provider.*.options` shape)
+    "openai": {
+      "settings": {
+        "baseURL": "http://127.0.0.1:8787/w/opencode/openai/v1"
+      }
+    },
+    "anthropic": {
+      "settings": {
+        "baseURL": "http://127.0.0.1:8787/w/opencode/anthropic/v1"
+      }
+    },
+    "opencode-go": {
+      "settings": {
+        "baseURL": "http://127.0.0.1:8787/w/opencode/compat/opencode-go/v1"
       }
     }
   },
@@ -36,15 +54,26 @@
       },
       "caveman": {
         "type": "local",
-        "command": ["/home/minh/.caveman/bin/caveman-mcp"]
+        "command": [
+          "/home/minh/.caveman/bin/caveman-mcp"
+        ]
       },
       "rea": {
         "type": "local",
-        "command": ["npx", "-y", "rea-agents@latest", "mcp"]
+        "command": [
+          "npx",
+          "-y",
+          "rea-agents@latest",
+          "mcp"
+        ]
       },
       "playwright": {
         "type": "local",
-        "command": ["npx", "-y", "@playwright/mcp@latest"]
+        "command": [
+          "npx",
+          "-y",
+          "@playwright/mcp@latest"
+        ]
       }
     }
   }
