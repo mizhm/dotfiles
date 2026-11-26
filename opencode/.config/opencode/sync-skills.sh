@@ -9,7 +9,7 @@ grep -Ev '^\s*(#|$)' skills.sources | while read -r repo path; do
   [ -d "$src" ] || git clone -q --depth 1 "https://github.com/$repo" "$src"
   [ -f "$src/$path/SKILL.md" ] || { echo "missing: $repo/$path" >&2; exit 1; }
   name=$(sed -n 's/^name:[[:space:]]*//p' "$src/$path/SKILL.md" | head -1 | tr -d "\"'")
-  [ -n "$name" ] || { echo "no name: $repo/$path" >&2; exit 1; }
+  [[ $name =~ ^[a-z0-9-]+$ ]] || { echo "bad name '$name': $repo/$path" >&2; exit 1; }
   rm -rf "skills/$name"
   cp -r "$src/$path" "skills/$name"
   echo "$name <- $repo/$path@$(git -C "$src" rev-parse --short HEAD)"

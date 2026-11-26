@@ -40,11 +40,11 @@
       },
       "rea": {
         "type": "local",
-        "command": ["npx", "-y", "rea-agents@6.4.0", "mcp"]
+        "command": ["npx", "-y", "rea-agents@latest", "mcp"]
       },
       "playwright": {
         "type": "local",
-        "command": ["npx", "@playwright/mcp@latest"]
+        "command": ["npx", "-y", "@playwright/mcp@latest"]
       }
     }
   }

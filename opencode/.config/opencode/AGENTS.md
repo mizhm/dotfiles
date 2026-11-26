@@ -24,7 +24,7 @@ The superpowers plugin bootstraps `using-superpowers` each session. Before a cod
 
 - Frontend/UI design work: `impeccable` (or `/impeccable`).
 - Reverse engineering binaries, apps, bundles: `reverse-engineer-anything` (REA MCP).
-- Unfamiliar codebase architecture: `understand` / `understand-chat`.
+- Unfamiliar codebase architecture: `understand` / `understand-chat` (and other `understand-*`). Installed outside dotfiles: symlinks in `~/.agents/skills` → `~/.understand-anything/repo`; update with `~/.understand-anything/repo/install.sh --update`.
 - Code review or "is this over-engineered": `ponytail-review`.
 - Security: building features that touch input/auth/secrets → `security-and-hardening`; auditing code → `security-review`; scanning → `semgrep`; dependencies → `supply-chain-risk-auditor`; `.github/workflows` → `gha-security-review`.
 - Design & lifecycle: public APIs/module boundaries → `api-and-interface-design`; ADRs/docs → `documentation-and-adrs`; removals, renames, zero-downtime schema changes → `deprecation-and-migration`; pipelines → `ci-cd-and-automation`; logging/metrics/tracing → `observability-and-instrumentation`; slow code → `performance-optimization`; pre-deploy → `shipping-and-launch`.
