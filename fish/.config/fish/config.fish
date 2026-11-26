@@ -4,6 +4,7 @@ end
 starship init fish | source
 alias c="clear"
 alias a="claude"
+alias oc="opencode"
 alias pn="pnpm"
 alias v="nvim"
 alias nv="nvim"
