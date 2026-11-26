@@ -24,3 +24,10 @@ set -gx PATH $PATH $GOPATH/bin
 
 # Added by Antigravity CLI installer
 set -gx PATH "/home/minh/.local/bin" $PATH
+
+# pnpm
+set -gx PNPM_HOME '/home/minh/.local/share/pnpm'
+if test "$PATH[1]" != "$PNPM_HOME/bin"
+  set -gx PATH "$PNPM_HOME/bin" $PATH
+end
+# pnpm end

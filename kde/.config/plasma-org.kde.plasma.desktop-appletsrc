@@ -24,6 +24,10 @@ popupWidth=560
 [Containments][3][Applets][23][Configuration][Appearance]
 fontWeight=400
 
+[Containments][3][Applets][23][Configuration][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
 [Containments][3][Applets][24]
 immutability=1
 plugin=org.kde.plasma.showdesktop
@@ -126,7 +130,7 @@ plugin=org.kde.plasma.weather
 
 [Containments][3][Applets][8][Applets][25]
 immutability=1
-plugin=org.kde.plasma.battery
+plugin=org.kde.plasma.dwellclicker
 
 [Containments][3][Applets][8][Applets][26]
 immutability=1
@@ -140,9 +144,17 @@ plugin=org.kde.plasma.bluetooth
 immutability=1
 plugin=org.kde.plasma.mediacontroller
 
+[Containments][3][Applets][8][Applets][81]
+immutability=1
+plugin=org.kde.plasma.battery
+
 [Containments][3][Applets][8][Applets][9]
 immutability=1
 plugin=org.kde.kdeconnect
+
+[Containments][3][Applets][8][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
 
 [Containments][3][Applets][8][General]
 extraItems=org.kde.kdeconnect,org.kde.plasma.vault,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.volume,org.kde.plasma.weather,org.kde.plasma.dwellclicker
@@ -266,7 +278,7 @@ migrated=true
 
 [Containments][53][Applets][58][Applets][73]
 immutability=1
-plugin=org.kde.plasma.battery
+plugin=org.kde.plasma.dwellclicker
 
 [Containments][53][Applets][58][Applets][74]
 immutability=1
@@ -275,6 +287,10 @@ plugin=org.kde.plasma.brightness
 [Containments][53][Applets][58][Applets][75]
 immutability=1
 plugin=org.kde.plasma.bluetooth
+
+[Containments][53][Applets][58][Applets][80]
+immutability=1
+plugin=org.kde.plasma.battery
 
 [Containments][53][Applets][58][General]
 extraItems=org.kde.kdeconnect,org.kde.plasma.vault,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.volume,org.kde.plasma.weather,org.kde.plasma.dwellclicker
@@ -285,7 +301,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][53][Applets][76][Configuration]
-popupHeight=400
+popupHeight=451
 popupWidth=560
 
 [Containments][53][Applets][76][Configuration][Appearance]
@@ -314,7 +330,8 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][78][Wallpaper][org.kde.image][General]
-Image=/home/minh/Pictures/wall/wallhaven-p92y93.png
+Image=file:///usr/share/wallpapers/Mountain/
+SlidePaths=/usr/share/wallpapers/
 
 [Containments][79]
 ItemGeometries-1920x1080=

@@ -20,8 +20,7 @@
           - image
       - id: pro
         name: Pro
-        description:
-          Stronger agentic coding, knowledge, and difficult reasoning; suited
+        description: Stronger agentic coding, knowledge, and difficult reasoning; suited
           to complex or quality-critical tasks at higher cost.
         contextWindow: 1048576
         inputModalities:
@@ -29,8 +28,8 @@
 - id: agent-default-model
   name: "@deepseek-ai/dsh-agent-default-model"
   config:
-    provider: deepseek-official
-    model: auto
+    provider: router
+    model: free
 - id: ui-theme
   name: "@deepseek-ai/dsh-client-ui-theme"
   config:
@@ -51,7 +50,8 @@
         serverName: context7
         transport: streamable-http
         url: https://mcp.context7.com/mcp
-        headers: !!js "process.env.CONTEXT7_API_KEY ? { Authorization: `Bearer ${process.env.CONTEXT7_API_KEY}` } : {}"
+        headers: !!js "process.env.CONTEXT7_API_KEY ? { Authorization: `Bearer
+          ${process.env.CONTEXT7_API_KEY}` } : {}"
     - id: mcp-playwright
       name: "@deepseek-ai/dsh-mcp-client"
       config:
@@ -66,4 +66,24 @@
   name: "@deepseek-ai/dsh-agent-preset-registry"
   config:
     default: standard
-    selectedDefault: standard
+    selectedDefault: ptc
+- id: llm-pi-ai
+  name: "@deepseek-ai/dsh-llm-pi-ai"
+  config:
+    providers:
+      router:
+        displayName: 9router
+        apiKeyEnv: ROUTER_API_KEY
+        api: openai-completions
+        baseURL: https://llm.oasm.dev/v1
+        models:
+          - id: auto
+            name: Auto
+            input:
+              - text
+              - image
+          - id: free
+            name: Free
+            input:
+              - text
+              - image
