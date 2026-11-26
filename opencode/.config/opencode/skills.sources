@@ -1,0 +1,36 @@
+# Vendored third-party skills: <repo> <path-in-repo>. Installed as skills/<frontmatter name>.
+# Refresh with ./sync-skills.sh. Licenses: anthropics (Apache-2.0), addyosmani (MIT),
+# getsentry (Apache-2.0), trailofbits (CC-BY-SA-4.0), supabase (MIT), vercel-labs (MIT).
+
+# Official Anthropic
+anthropics/skills skills/mcp-builder
+anthropics/skills skills/webapp-testing
+anthropics/skills skills/pdf
+anthropics/skills skills/docx
+anthropics/skills skills/xlsx
+anthropics/skills skills/pptx
+
+# Engineering lifecycle (addyosmani/agent-skills)
+addyosmani/agent-skills skills/api-and-interface-design
+addyosmani/agent-skills skills/security-and-hardening
+addyosmani/agent-skills skills/performance-optimization
+addyosmani/agent-skills skills/ci-cd-and-automation
+addyosmani/agent-skills skills/documentation-and-adrs
+addyosmani/agent-skills skills/observability-and-instrumentation
+addyosmani/agent-skills skills/deprecation-and-migration
+addyosmani/agent-skills skills/shipping-and-launch
+addyosmani/agent-skills skills/accessibility-engineering
+
+# Security & review (Sentry, Trail of Bits)
+getsentry/skills skills/security-review
+getsentry/skills skills/gha-security-review
+getsentry/skills skills/agents-md
+trailofbits/skills plugins/static-analysis/skills/semgrep
+trailofbits/skills plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor
+trailofbits/skills plugins/property-based-testing/skills/property-based-testing
+trailofbits/skills plugins/modern-python/skills/modern-python
+
+# Data & frontend stacks
+supabase/agent-skills skills/supabase-postgres-best-practices
+vercel-labs/agent-skills skills/react-best-practices
+vercel-labs/agent-skills skills/composition-patterns

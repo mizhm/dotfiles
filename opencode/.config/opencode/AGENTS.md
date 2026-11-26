@@ -26,6 +26,12 @@ The superpowers plugin bootstraps `using-superpowers` each session. Before a cod
 - Reverse engineering binaries, apps, bundles: `reverse-engineer-anything` (REA MCP).
 - Unfamiliar codebase architecture: `understand` / `understand-chat`.
 - Code review or "is this over-engineered": `ponytail-review`.
+- Security: building features that touch input/auth/secrets → `security-and-hardening`; auditing code → `security-review`; scanning → `semgrep`; dependencies → `supply-chain-risk-auditor`; `.github/workflows` → `gha-security-review`.
+- Design & lifecycle: public APIs/module boundaries → `api-and-interface-design`; ADRs/docs → `documentation-and-adrs`; removals, renames, zero-downtime schema changes → `deprecation-and-migration`; pipelines → `ci-cd-and-automation`; logging/metrics/tracing → `observability-and-instrumentation`; slow code → `performance-optimization`; pre-deploy → `shipping-and-launch`.
+- Testing: browser/E2E checks of a local web app → `webapp-testing`; invariants over whole input domains → `property-based-testing`; a11y audits → `accessibility-engineering`.
+- Stacks: Postgres schema/queries → `supabase-postgres-best-practices`; React/Next.js → `vercel-react-best-practices`, `vercel-composition-patterns`; Python project setup → `modern-python`; building an MCP server → `mcp-builder`.
+- Files: `pdf`, `docx`, `xlsx`, `pptx`. Repo agent instructions → `agents-md`.
+- Vendored skills sometimes name skills we don't install: `debugging-and-error-recovery` → `systematic-debugging`; `incremental-implementation` → `executing-plans`. Third-party skills are listed in `skills.sources`; refresh with `./sync-skills.sh`, never hand-edit them.
 
 ## Tools (OpenCode V2)
 
