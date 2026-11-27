@@ -72,7 +72,11 @@
         "command": [
           "npx",
           "-y",
-          "@playwright/mcp@latest"
+          "@playwright/mcp@latest",
+          "--browser",
+          "chromium",
+          "--executable-path",
+          "/usr/bin/chromium-browser"
         ]
       }
     }
